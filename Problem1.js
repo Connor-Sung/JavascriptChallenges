@@ -1,8 +1,13 @@
 let num
 
-+prompt("Insert Maximum Height");
+function(num){
+    +prompt("Insert Maximum Height",);
+}
+
 
 while (i <= num){
-    console.log("#")
-    i++
+    String("#", num)
+    console.log(String)
+    i++;
+
 }
