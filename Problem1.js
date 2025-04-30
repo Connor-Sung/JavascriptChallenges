@@ -1,16 +1,22 @@
 // Mario Problem //
 
 
-let Mario = +prompt("How Much P") 
+let Mario = +prompt("How Much P") + 1 
 let Luigi = +prompt("How much G")
 
+function Minus(Mario){
+    for (let i = Mario; i > 0; i--){
+        Mario = Mario - 1;
+        console.log(Mario);
+    }
+}
+Minus(Mario);
 
 // function build(Mario) {
 //     for (let i = 0; i < Mario ; i++){
 //         let row = "";
 //         row = row + " ";
-//         row = row + "#"
-//         console.log(row)
+//          
 //     }
 // }
 // function builder(Mario) {
@@ -38,21 +44,21 @@ let Luigi = +prompt("How much G")
 // buildest(Luigi);
 // console.log(buildest(Luigi));
 
-function Repeat (Mario){
-    for (let i = 0; i < Mario; i++){
-    let row = "";
-    row = row + " ";
-    console.log(row);
-    }
-};
+// function Repeat (Mario){
+//     for (let i = 0; i < Mario; i++){
+//     let row = "";
+//     row.padStart () = row + " ";
+//     console.log(row);
+//     }
+// };
 
-function Repeat2 (Mario){
-    for (let i = Mario; i <= 0; i--){
-    Repeat (Mario);
-    row = row + "#";
-    console.log(row);
-    }
-}
+// function Repeat2 (Mario){
+//     for (let i = Mario; i <= 0; i--){
+//     Repeat (Mario);
+//     row = row + "#";
+//     console.log(row);
+//     }
+// }
 
-// Repeat (Mario);
-Repeat2 (Mario);
+// // Repeat (Mario);
+// Repeat2 (Mario);
