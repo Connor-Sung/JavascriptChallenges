@@ -1,31 +1,38 @@
 // Mario Problem //
 
 
-let Mario = +prompt("How Much P") + 1 
-let Luigi = +prompt("How much G")
+let Mario = +prompt("How Much G")
+let Luigi = +prompt("How much P")
 
 function Minus(Mario){
     for (let i = Mario; i > 0; i--){
         Mario = Mario - 1;
-        console.log(Mario);
     }
 }
 Minus(Mario);
 
-// function build(Mario) {
-//     for (let i = 0; i < Mario ; i++){
-//         let row = "";
-//         row = row + " ";
-//          
-//     }
-// }
-// function builder(Mario) {
-//     build(Mario);
-//     let row2 = row
-//     row2 = row2 + "#";
-//     // row2.slice(i, Mario);
-//     console.log (row2);
-// }
+function build(Mario) {
+    let row = "";
+    for (let i = 0; i < Mario ; i++){
+            // loop that does row = row + " ", 
+        row = row.padStart(2, Minus(Mario), " ");
+        // loop that does row = row + "#"
+        row = row + "#";
+        console.log(row);
+    }
+}
+build(Mario);
+function build(Luigi) {
+    let row = "";
+    for (let i = 0; i < Mario ; i++){
+            // loop that does row = row + " ", 
+        row = row.padStart(2, Minus(Mario), " ");
+        // loop that does row = row + "#"
+        row = row + "#";
+        console.log(row);
+    }
+}
+build(Luigi);
 
 // for(let i = 0; i < Mario; i++){
 //     build(Mario);
