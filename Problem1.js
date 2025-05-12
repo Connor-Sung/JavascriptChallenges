@@ -10,42 +10,28 @@ function Minus(Mario){
     }
 }
 
-function Minus2(Luigi){
-    for (let i = Luigi; i > 0; i--){
-        Luigi = Luigi - 1;
-    }
-}
-
-function build(Mario) {
-    let row = "";
-    for (let i = 0; i < Mario ; i++){
-            // loop that does row = row + " ", 
-        row = row.padStart(2, Minus(Mario), " ");
-        // loop that does row = row + "#"
+function World(){
+    let row = "  ";
+    for (let j = 0; j < Luigi ; j++){
+        // row = row.padStart(2, Minus(Mario), " ");
         row = row + "#";
-        console.log(row);
     }
-}
-console.log(build(Mario));
-function build2(Luigi) {
+    for (let i = 0; i < Luigi ; i++){
     let row2 = "";
-    for (let i = 1; i < Luigi ; i++){
-            // loop that does row = row + " ", 
-        for(let j = 0; j < Luigi - i; j++){
+
+        for(let j = 0; j < Luigi - 1 - i; j++){
             row2 = row2 + " "
+
         }
             
-        // loop that does row = row + "#"
-        for(let k = 0; k < i; k++){
+        for (let k = 0; k < Luigi - 3 + i; k++){    
             row2 = row2 + "#"
-        }
-        console.log(row2);
+         }
+    let row3 = row2 + row
+        console.log(row3);
     }
 }
-console.log(build2(Luigi));
-
-// let World = Luigi.concat(Mario);
-// console.log(World);
+World();
 
 // for(let i = 0; i < Mario; i++){
 //     build(Mario);
@@ -79,6 +65,3 @@ console.log(build2(Luigi));
 //     console.log(row);
 //     }
 // }
-
-// // Repeat (Mario);
-// Repeat2 (Mario);
