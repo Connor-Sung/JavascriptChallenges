@@ -29,7 +29,7 @@ function World(){
 
         }
             
-        for (let k = 0; k < Mario - 3 + i; k++){    
+        for (let k = 0; k < Mario - Mario + i + 1; k++){    
             row2 = row2 + "#"
          }
 
