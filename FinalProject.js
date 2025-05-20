@@ -5,7 +5,7 @@ function randomlessthan(num){
  y = (Math.floor(Math.random() * num))};
 for (let j = 0; j < 5; j++ ){
 randomlessthan(100);
-console.log(y);
+// console.log(y);
 for (i = 0; true; i++){ //loops until you get number
 let Guess = +prompt("Guess the Number");
 
